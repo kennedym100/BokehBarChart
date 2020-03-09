@@ -1,5 +1,5 @@
 # BokehBarChart
-#Python Code reads in hr data and displays headcount numbers by High, Medium, and Low cost locations by date. This chart includes a drop down allowing you to select different manager sets. This chart also utilizes Bokeh's hover over feature that allows you to dispaly headcount numbers for a specific date by hovering your cursor over the area you want to see.
+#Python Code reads in multiple hr excel spreadsheets concatenates all relevant columns and displays headcount numbers by High, Medium, and Low cost locations by date. This chart includes a drop down allowing you to select different manager sets. This chart also utilizes Bokeh's hover over feature that allows you to dispaly headcount numbers for a specific date by hovering your cursor over the area you want to see.
 
 import os
 
