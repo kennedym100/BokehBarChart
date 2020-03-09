@@ -75,7 +75,7 @@ for i in newlist:
 
     df = df[df['Employee Status']  != 'Terminated']
 
-### drop all but tigar
+### drop all but Ms L08
 
     df = df[df['Ms L08']  == 9906761]
 
@@ -136,12 +136,7 @@ master_df['Month'] = master_df.Date.apply(lambda x: x.month)
 master_df['Week'] = master_df.Date.apply(lambda x: x.week)
 
  
-
 print(master_df)
-
- 
-
- 
 
 ### Create a figure
 
@@ -155,15 +150,6 @@ print(master_df)
 
 #p.circle(master_df.index.tolist(),master_df['L'], color='blue')
 
- 
-
- 
-
- 
-
- 
-
- 
 
 #output_file('HML_Test.html')
 
@@ -177,15 +163,11 @@ p = figure(plot_height=350,
 
     toolbar_location='above')
 
- 
-
 p.vbar(x=master_df.Week, top=master_df.H, width=0.9, fill_color = 'red')
 
 p.vbar(x=master_df.Week, top=master_df.M, width=0.9, fill_color = 'orange')
 
 p.vbar(x=master_df.Week, top=master_df.L, width=0.9, fill_color = 'blue')
-
- 
 
 p.y_range.start = 0
 
